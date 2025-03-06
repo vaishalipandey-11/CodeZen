@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FaArrowRight } from "react-icons/fa";
 // import "./Border.css";
 import CTAButton from "../HomePage/Button";
+import ColorPicker from 'react-best-gradient-color-picker'
 
 const CodeBlocks = ({
     position, heading, subheading, ctabtn1, ctabtn2, codeblock, backgroudGradient, codeColor 
@@ -51,22 +52,20 @@ const CodeBlocks = ({
                     <p>11</p>
                  </div>
                  
-
-                <div className={`w-[90%] flex flex-col gap-2 font-bold 
-                      font-mono ${codeColor} pr-1`}>
-                  <TypeAnimation 
-                  sequence={[codeblock,2000 , ""]}
-                  repeat={Infinity}
-                  cursor={true}
-                  style={
-                    {
-                    whiteSpace : "pre-line",
-                    display : "block"
-                    }
-                }
-                     omitDeletionAnimation ={true}
-                  />
-                </div>
+                
+                    <div className="w-[90%] flex flex-col gap-2 font-bold font-mono pr-1 p-4 rounded-md gradient-background">
+                        <TypeAnimation
+                            sequence={[codeblock, 2000, ""]}
+                            repeat={Infinity}
+                            cursor={true}
+                            className="animated-code" // Apply the CSS animation
+                            style={{
+                            whiteSpace: "pre-line",
+                            display: "block",
+                            }}
+                        omitDeletionAnimation={true}
+                    />
+                    </div>
 
         </div>
 
