@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit"
 
+// Initial state for viewing course details
 const initialState = {
-  courseSectionData: [],
-  courseEntireData: [],
-  completedLectures: [],
-  totalNoOfLectures: 0,
+  courseSectionData: [],       // Contains sections and their lectures
+  courseEntireData: [],        // Full course info
+  completedLectures: [],       // List of completed lecture IDs
+  totalNoOfLectures: 0,        // Total lectures in course
 }
 
 const viewCourseSlice = createSlice({
@@ -12,7 +13,6 @@ const viewCourseSlice = createSlice({
   initialState,
   reducers: {
     setCourseSectionData: (state, action) => {
-      // console.log("Course Section Data in slice is", action.payload)
       state.courseSectionData = action.payload
     },
     setEntireCourseData: (state, action) => {
@@ -30,6 +30,7 @@ const viewCourseSlice = createSlice({
   },
 })
 
+// Exporting all actions
 export const {
   setCourseSectionData,
   setEntireCourseData,
@@ -38,4 +39,5 @@ export const {
   updateCompletedLectures,
 } = viewCourseSlice.actions
 
+// Exporting reducer to use in store
 export default viewCourseSlice.reducer

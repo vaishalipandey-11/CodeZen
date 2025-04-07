@@ -1,18 +1,16 @@
+/* Importing Tailwind’s base styles, components, and utility classes */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-  
-  @keyframes color-animation {
-    0% { color: #d21313; }  /* Red */
-     /* Yellow */
-    50% { color: #ad3555; } /* Green */
-     /* Blue */
-    100% { color: #36e3e3; } /* Back to Red */
-  }
-  
-  .animated-code {
-    animation: color-animation 5s infinite linear;
-  }
-  
-  
+/* Custom keyframe animation for changing text color smoothly */
+@keyframes color-animation {
+  0% { color: #d21313; }       /* Start with Red */
+  50% { color: #ad3555; }      /* Midway: purplish shade */
+  100% { color: #36e3e3; }     /* End: Cyan */
+}
+
+/* Apply the color-changing animation to any element using this class */
+.animated-code {
+  animation: color-animation 5s infinite linear;
+}
