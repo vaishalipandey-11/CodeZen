@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { useForm } from "react-hook-form"
-import { apiConnector } from '../../services/apiconnector';
-import { contactusEndpoint } from '../../services/apis';
+// import { apiConnector } from '../../services/apiconnector';
+// import { contactusEndpoint } from '../../services/apis';
 import CountryCode from "../../data/countrycode.json"
 import '../ContactPage/ContactForm.css'
 
 const ContactUsForm = () => {
 
     // State to manage loading state during form submission
-    const [loading, setLoading] = useState(false);
+    // const [loading, setLoading] = useState(false);
+    const [ setLoading] = useState(false);
 
     // useForm hook for managing form data, validation, and reset
     const {

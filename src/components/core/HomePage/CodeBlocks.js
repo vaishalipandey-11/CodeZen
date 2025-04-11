@@ -2,7 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation"; // For typing animation in the code block
 import { FaArrowRight } from "react-icons/fa"; // Arrow icon for button
 import CTAButton from "../HomePage/Button"; // Custom button component
-import ColorPicker from 'react-best-gradient-color-picker'; // (Unused here, maybe for future use)
+// import ColorPicker from 'react-best-gradient-color-picker'; // (Unused here, maybe for future use)
 
 // CodeBlocks component accepts several props to dynamically render UI
 const CodeBlocks = ({

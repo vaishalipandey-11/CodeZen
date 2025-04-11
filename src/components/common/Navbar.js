@@ -15,7 +15,9 @@ const Navbar = () => {
   // Extracting data from Redux store
   const { token } = useSelector((state) => state.auth);
   const { user } = useSelector((state) => state.profile);
-  const { cart, totalItems } = useSelector((state) => state.cart);
+  // const { cart, totalItems } = useSelector((state) => state.cart);
+  const { totalItems } = useSelector((state) => state.cart);
+
 
   const location = useLocation(); // Hook to access current route
   const [subLinks, setSubLinks] = useState([]); // Stores subcategories for "Catalog"
@@ -46,7 +48,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link to="/">
-          <img src={logo} width={160} height={42} loading='lazy' />
+          <img src={logo} width={160} height={42} loading='lazy'alt='IMG' />
         </Link>
 
         {/* Navigation Links */}

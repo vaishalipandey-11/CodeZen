@@ -19,12 +19,12 @@ const Button = ({ children, active, linkto }) => {
 };
 
 export default Button;
-  {/* 
+  /* 
         Button styling:
         - Different background/text color based on "active"
         - Rounded edges, bold text, padding
         - Shadow and hover effects
-      */}
+      */
       // Reusable Button component
 // Props:
 // - children: content inside the button
